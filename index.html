@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Portfolio</title>
+<link href="port style.css" rel="stylesheet" type="text/css" media="screen">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato&amp;subset=latin-ext" rel="stylesheet">
+<link href="css/fontello.css" rel="stylesheet" type="text/css">
+	<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('zegar').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+</head>
+
+<body onLoad="startTime()">
+<div id="container">
+	<div class="rectangle">
+		<div id="logo">Jan Kompałka</div>
+		<div id="zegar"></div>
+<div style="clear: both;"></div>
+	</div>
+	
+	<div class="square">
+		<div class="tile1"><i class="icon-user"></i><br/>Kim jesteś</div>
+	<div class="tile1"><i class="icon-television"></i><br/>Co oferuje</div>
+	<div style="clear:both;"></div>
+	<div class="tile2"><i class="icon-graduation-cap"></i><br/>Curriculum viae</div>
+	<div class="tile3"><i class="icon-mail-alt"></i><br/>Kontakt ze mną</div>
+	<div style="clear:both;"></div>
+	<div class="tile4"><i>Talk is cheap. Show me the code!</i><br/>-Linus Torvalds, twórca Linuxa</div>
+	</div>
+	<div class="square">
+	<div class="tile5">Treść</div>
+	<div class="yt"><i class="icon-youtube-squared"></i></div>
+	<div class="fb"><i class="icon-facebook-circled"></i></div>
+	<div class="gplus"><i class="icon-gplus-circled"></i></div>
+	<div class="tw"><i class="icon-twitter-circled"></i></div>
+	<div style="clear:both;"></div>
+	</div>
+	<div style="clear:both;"></div>
+	
+	<div class="rectangle">2017 &copy; Jan Kompałka - Portfolio, email-janek1qaz@gmail.com</div>
+	
+</div>
+</body>
+</html>
