@@ -1,23 +1,17 @@
 <!DOCTYPE html>
-<?php
-    // Start the session
-    ob_start();
-    session_start();
-
-    // Check to see if actually logged in. If not, redirect to login page
-    if (!isset($_SESSION['loggedIn']) || $_SESSION['loggedIn'] == false) {
-        header("Location: index.php");
-    }
-?>
-
 <html> 
 
 <head>
 	<style>
+		*{
+			font-family:Arial;
+		}
 	body{
-		background-color: rgba(0,0,0,1.00);
+		background-color: #001931;
 		color:white;
-    background-size: cover; background-repeat: no-repeat; margin-top:0; 
+         background-size: cover; 
+		background-repeat: no-repeat; 
+		margin-top:0; 
 		
 	margin:0px;
 	padding:4px:
@@ -25,7 +19,7 @@
 div{
 	overflow:hidden;}
 	#ramka{
-			font-family:Arial;
+			
 			background-image: url();
 		text-align: center;
 		width:100%;
@@ -33,7 +27,7 @@ div{
 		
 	margin-left:auto;}
 	#naglowek{
-		font-family:Arial;
+		
 	
 		width:100%;
 		padding-bottom: 10px;
@@ -43,7 +37,7 @@ div{
 		background-position: center;
 		font-size:85px;
 		text-align:center;		border-bottom: solid thin rgba(255,255,255,1.00);
-	background-color:#000000;}
+	background-color:#0003B1;}
 	#stopka{
 
 		width:100%;
@@ -62,7 +56,7 @@ div{
 			border-right: solid thin rgba(255,255,255,1.00);
 		
 		float:left;
-		font-family:Arial;
+		
 		font-weight: bold;
 		font-size:21px;
 		height:800px;
@@ -85,7 +79,7 @@ line-height:240px;
 		
 		   box-sizing: border-box;
 		text-align: center;
-		font-family:Arial;
+		
 		
 		font-size:27px;
 		height:800px;
@@ -100,7 +94,6 @@ line-height:240px;
 		
 		   box-sizing: border-box;
 		text-align: center;
-		font-family:Arial;
 		font-weight: bold;
 		padding-top:20px;
 		font-size:29px;
@@ -133,12 +126,10 @@ line-height:240px;
 
 
 	
-<div id="stopka"><font face="Arial Light" size="2">ADOBE DREAMWEAVER<b style="font-weight:bold; font-size:20px;">&amp;</b>AFTER EFFECTS<br><b style="font-weight:bold; font-size:20px;">03.04.18r.</b></font></div>
+<div id="stopka"><font face="Arial Light" size="2">ADOBE DREAMWEAVER<b style="font-weight:bold; font-size:20px;">&amp;</b><b style="font-weight:bold; font-size:20px;">03.04.18r.</b></font></div>
 </div>
-
-	
 <h1>Logged In!</h1>
-<form method="post" action="logout.php">
+<form method="post" action="">
     <input type="submit" value="Logout">
 </form>
 </body>
